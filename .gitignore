@@ -1,0 +1,32 @@
+# --- R Specific ---
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Renviron
+# Only ignore .Renviron if it contains sensitive API keys;
+# otherwise, keep it if it's needed for environment setup.
+
+# --- Rhino / Node.js Specific ---
+# Rhino uses Node for Sass and JavaScript management
+node_modules/
+app/static/js/app.min.js
+app/static/css/app.min.css
+.parcel-cache/
+
+# --- renv (Package Management) ---
+# We keep the activation script and lockfile, but ignore the library itself
+renv/library/
+renv/python/
+renv/staging/
+renv/local/
+
+# --- Testing & Documentation ---
+tests/testthat/_snaps/
+# If using Cypress for E2E tests
+tests/cypress/screenshots/
+tests/cypress/videos/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
